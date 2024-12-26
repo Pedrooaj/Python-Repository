@@ -4,7 +4,7 @@ while(True):
     entrada =  input('Você quer "entrar" ou "sair": ').lower()
 
     if entrada == 'entrar':
-        print("Você entrou no sistema").
+        print("Você entrou no sistema")
         break
     elif entrada == 'sair': 
         print("Você saiu do sistema")
