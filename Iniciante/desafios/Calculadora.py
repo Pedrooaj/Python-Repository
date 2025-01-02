@@ -34,16 +34,24 @@ while True:
     if len(op) > 1:
         print("Digite apenas um operador")
         continue
-
+    
+    result = None
     if op == "+":
-        result = n1 + n2
+        result = n1_float + n2_float
     elif op == "-":
-        result = n1 - n2
+        result = n1_float - n2_float
     elif op == "*":
-        result = n1 * n2
+        result = n1_float * n2_float
     elif op == "/":
-        result = n1 / n2
+        result = n1_float / n2_float
+        
+    if result is not None:
+        print(f"Seu resultado e: {result}")    
+    
+        
     sair = input("Quer sair? [s]air \n").lower().startswith('s')
+    
+ 
     
     if sair:
         break
