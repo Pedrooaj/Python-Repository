@@ -47,11 +47,8 @@ while True:
         
     if result is not None:
         print(f"Seu resultado e: {result}")    
-    
         
     sair = input("Quer sair? [s]air \n").lower().startswith('s')
-    
- 
     
     if sair:
         break
