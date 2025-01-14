@@ -1,5 +1,6 @@
 """
 Tipo list - um tipo mutavel com varios metodos
+append, insert,pop, clear, extend, +
 """
 
 list = ["Pedro", "Antonio", "Mendes", "Lemos"]
