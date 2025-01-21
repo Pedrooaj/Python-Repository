@@ -10,12 +10,17 @@ while True:
 
         try:
             indice = int(input("Escolha um indice para apagar: "))
-            lista.pop(indice)
+            del lista[indice]
             print("Item deletado com sucesso")  
             print("-" * 40)
-        except:
-          print('O indice deve ser um número')
+        except ValueError:
+          print('O indice deve ser um número inteiro')
           print("-" * 40)
+        except IndexError:
+            print("Indice não existe")
+            print("-" * 40)
+        except Exception:
+            print("Erro desconhecido")
     elif resposta == 'l':
         if len(lista) > 0:
             print("Listando o carrinho de compras")
